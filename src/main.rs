@@ -2,6 +2,7 @@ use std::env;
 mod day_1;
 mod day_2;
 mod day_3;
+mod day_4;
 
 fn main() {
     let arguments: Vec<String> = env::args().collect();
@@ -17,6 +18,9 @@ fn main() {
             }
             "day_3" => {
                 day_3::run(path).unwrap();
+            }
+            "day_4" => {
+                day_4::run(path).unwrap();
             }
             _ => {
                 println!("unknown command: {}", command)
