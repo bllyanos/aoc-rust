@@ -3,6 +3,7 @@ mod day_1;
 mod day_2;
 mod day_3;
 mod day_4;
+mod day_5;
 
 fn main() {
     let arguments: Vec<String> = env::args().collect();
@@ -21,6 +22,9 @@ fn main() {
             }
             "day_4" => {
                 day_4::run(path).unwrap();
+            }
+            "day_5" => {
+                day_5::run(path).unwrap();
             }
             _ => {
                 println!("unknown command: {}", command)

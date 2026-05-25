@@ -74,7 +74,7 @@ impl Grid {
         }
 
         if x < last_idx && y > first_idx {
-            coordinates.push((y - 1, x + 1))
+            coordinates.push((y - 1, x + 1));
         }
 
         if x < last_idx {
@@ -149,6 +149,9 @@ pub fn run(input: &str) -> io::Result<()> {
         // for part 1
         // break;
 
+        // thread::sleep(Duration::from_millis(200));
+        // clearscreen::clear().unwrap();
+        // grid.print();
         grid = next_grid.clone();
     }
 
